@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: blue;
+    height: 100vh;
+}
+
+.box{
+    background-color: rgb(255, 0, 234);
+    height: 100px;
+    margin: 20px;
+    width: 22%;                   /* depends on d number 0f boxes u want divided by d width %*/
+    flex-wrap: 1;
+}
+   
+   

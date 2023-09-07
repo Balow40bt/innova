@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2dae489828.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: aliceblue;">
+    <div class="navbar">
+       <a href="#">Home</a>
+       <a href="news.html">News</a>
+       <a href="dropdown">dropdown</a>
+       <button class="dropbtn"><i class="fa-solid fa-caret-down"></i></button>
+       <div class="dropdown-content">
+         <a href="#">Link1</a>
+         <a href="#">Link2</a>
+         <a href="#">Link3</a>
+       </div>
+
+    </div>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a{
+             float: left;
+             font-size: 16px;
+             color: aliceblue;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+        }
+
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn{
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: red;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a{
+            float: none;
+            text-decoration: none;
+            color: black;
+            text-align: left;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        .dropdown-content a:hover{
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .material-symbols-outlined {
+         font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        }
+
+
+
+
+    </style>
+</body>
+</html>
